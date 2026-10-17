@@ -1,114 +1,489 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080808">
-  <meta name="description" content="Kunal Shinde — aspiring Data Analyst and Python Developer.">
-  <title>Kunal Shinde | Data Analyst & Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kunal Shinde | Data Analyst & Web Developer</title>
+    <meta name="description" content="Official portfolio of Kunal Shinde, aspiring Data Analyst and Web Developer from Nashik, Maharashtra. Explore my skills, projects and resume.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-  <div class="progress"><span id="progressBar"></span></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="header" id="top">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home"><span class="brand-mark">KS</span><span>KUNAL <b>SHINDE</b></span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><i></i><i></i><i></i></button>
-      <div class="nav-links" id="navLinks">
-        <a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#skills">Skills</a><a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#education">Education</a><a class="nav-link" href="#contact">Contact</a>
-      </div>
-      <a class="nav-contact" href="mailto:kunalshinde1600@gmail.com">Let's Talk <span>↗</span></a>
-    </nav>
-  </header>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">KS<span>.</span></a>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="hero-grid container">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="pulse-dot"></span> OPEN TO OPPORTUNITIES</p>
-          <p class="hello">Hello, I'm <span>👋</span></p>
-          <h1>KUNAL<br><em>SHINDE.</em></h1>
-          <h2>Aspiring <span id="typingRole">Data Analyst</span><i class="typing-cursor">|</i></h2>
-          <p class="hero-text">Turning data into meaningful insights and building useful solutions with code. Curious by nature, committed to learning, and ready to grow.</p>
-          <div class="hero-buttons"><a class="btn btn-gold" href="#projects">Explore Projects <span>↗</span></a><a class="btn btn-ghost" href="#contact">Contact Me</a></div>
-          <div class="socials">
-            <a href="https://github.com/kunalshinde2109" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
-            <a href="https://www.linkedin.com/in/kunal-shinde-545592436" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
-            <a href="https://kunalshinde2109.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Live portfolio">↗</a>
-          </div>
-        </div>
-        <div class="hero-visual reveal delay">
-          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-          <div class="photo-ring"><div class="photo-inner"><img src="./images/profile.jpg" alt="Kunal Shinde profile photo"></div></div>
-          <div class="float-card float-top"><span class="spark">✦</span><span>Curious mind<br><b>Analytical thinking</b></span></div>
-          <div class="float-card float-bottom"><span class="mini-chart"><i></i><i></i><i></i><i></i></span><span>Learn. <b>Build.</b> Grow.</span></div>
-          <span class="visual-label">DATA <b>×</b> CODE</span>
-        </div>
-      </div>
-      <div class="hero-foot container"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / 05</span></div>
-    </section>
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
 
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="section-head reveal"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curiosity meets <em>capability.</em></h2><p>I enjoy turning ideas into practical solutions, learning new technologies, and using data to make better decisions.</p></div>
-        <div class="about-grid">
-          <article class="panel about-panel reveal"><span class="panel-icon">✦</span><h3>Who I Am</h3><p>I'm a Computer Science student from Nashik with a growing interest in Data Analytics and Python development. I enjoy exploring data, creating useful applications, and improving my skills through hands-on projects.</p><div class="chips"><span>📍 Nashik, Maharashtra</span><span>🎓 B.Sc. Computer Science</span><span>↗ Open to opportunities</span></div></article>
-          <article class="panel approach-panel reveal delay"><p class="eyebrow">MY APPROACH</p><h3>Always learning.<br>Always building.</h3><ul><li><b>01</b> Data analysis & visualization</li><li><b>02</b> Python & database-driven apps</li><li><b>03</b> Problem solving through projects</li><li><b>04</b> Continuous learning & growth</li></ul></article>
-        </div>
-      </div>
-    </section>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="section skills" id="skills">
-      <div class="container"><div class="section-head reveal"><p class="eyebrow">MY TOOLKIT</p><h2>Skills I'm <em>building with.</em></h2><p>A growing toolkit across analytics, programming, databases, and web development.</p></div>
-        <div class="skills-grid">
-          <article class="skill-card reveal"><span class="skill-icon">Py</span><h3>Python</h3><p>Programming & scripting</p></article>
-          <article class="skill-card reveal"><span class="skill-icon">SQL</span><h3>MySQL</h3><p>Queries & relational data</p></article>
-          <article class="skill-card reveal"><span class="skill-icon bars"><i></i><i></i><i></i></span><h3>Power BI</h3><p>Reports & visualization</p></article>
-          <article class="skill-card reveal"><span class="skill-icon">X</span><h3>Excel</h3><p>Data organization & analysis</p></article>
-          <article class="skill-card reveal"><span class="skill-icon">&lt;/&gt;</span><h3>HTML & CSS</h3><p>Responsive interfaces</p></article>
-          <article class="skill-card reveal"><span class="skill-icon">JS</span><h3>JavaScript</h3><p>Interactive web features</p></article>
-          <article class="skill-card reveal"><span class="skill-icon">Fl</span><h3>Flask</h3><p>Python web applications</p></article>
-          <article class="skill-card reveal"><span class="skill-icon">GH</span><h3>Git & GitHub</h3><p>Version control & projects</p></article>
-        </div>
-      </div>
-    </section>
+    <main>
 
-    <section class="section projects" id="projects">
-      <div class="container"><div class="section-head head-row reveal"><div><p class="eyebrow">SELECTED WORK</p><h2>Projects with <em>purpose.</em></h2><p>Small steps, practical solutions, and continuous improvement.</p></div><a class="text-link" href="https://github.com/kunalshinde2109" target="_blank" rel="noopener noreferrer">All GitHub projects ↗</a></div>
-        <div class="project-grid">
-          <article class="project-card reveal"><div class="project-meta"><span>PROJECT 01</span><b>01</b></div><div class="project-art banking" aria-hidden="true"><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-side"></div><div class="mock-main"><div class="mock-heading"></div><div class="mock-stats"><i></i><i></i><i></i></div><div class="mock-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div></div><h3>Bank Management System</h3><p>A database-driven banking application for customer and account management, transaction workflows, and an administrative dashboard.</p><div class="tags"><span>Python</span><span>Flask</span><span>MySQL</span><span>HTML/CSS</span></div><a class="project-link" href="https://github.com/kunalshinde2109/Bank-management-system" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></article>
-          <article class="project-card reveal delay"><div class="project-meta"><span>PROJECT 02</span><b>02</b></div><div class="project-art library-art" aria-hidden="true"><div class="library-mock"><div class="library-side"></div><div class="library-content"><div class="mock-heading"></div><div class="book-row"><i></i><i></i><i></i></div><div class="book-row"><i></i><i></i><i></i></div></div></div></div><h3>Library Management System</h3><p>A web-based application to organize book and student records, including issue and return workflows.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/kunalshinde2109" target="_blank" rel="noopener noreferrer">Find on GitHub <span>↗</span></a></article>
-        </div>
-        <p class="project-note">Tip: replace the Library project link with its dedicated GitHub repository URL whenever you have it.</p>
-      </div>
-    </section>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
 
-    <section class="section education" id="education">
-      <div class="container"><div class="section-head reveal"><p class="eyebrow">THE FOUNDATION</p><h2>Learning is a <em>journey.</em></h2></div>
-        <article class="education-card panel reveal"><div class="education-icon">🎓</div><div><p class="eyebrow">EDUCATION</p><h3>B.Sc. Computer Science</h3><p>NVP College, Lasalgaon · Savitribai Phule Pune University (SPPU)</p></div><span class="education-year">2026</span></article>
-      </div>
-    </section>
+                <p class="hero-tag">
+                    <i class="fas fa-circle"></i>
+                    Aspiring Data Analyst | Web Developer
+                </p>
 
-    <section class="section contact" id="contact">
-      <div class="container"><div class="contact-panel reveal"><div class="contact-copy"><p class="eyebrow">LET'S CONNECT</p><h2>Have an opportunity?<br><em>Let's talk.</em></h2><p>I'm interested in fresher opportunities where I can learn, contribute, and grow in Data Analytics or Python development.</p><a class="btn btn-gold" href="mailto:kunalshinde1600@gmail.com?subject=Opportunity%20for%20Kunal%20Shinde">Send Me an Email ↗</a></div>
-        <div class="contact-list">
-          <a href="mailto:kunalshinde1600@gmail.com" class="contact-item"><span class="contact-icon">✉</span><span><small>EMAIL</small><b>kunalshinde1600@gmail.com</b></span><i>↗</i></a>
-          <a href="tel:+917820906785" class="contact-item"><span class="contact-icon">☎</span><span><small>PHONE</small><b>+91 7820906785</b></span><i>↗</i></a>
-          <a href="https://www.linkedin.com/in/kunal-shinde-545592436" target="_blank" rel="noopener noreferrer" class="contact-item"><span class="contact-icon">in</span><span><small>LINKEDIN</small><b>Connect professionally</b></span><i>↗</i></a>
-          <a href="https://github.com/kunalshinde2109" target="_blank" rel="noopener noreferrer" class="contact-item"><span class="contact-icon">GH</span><span><small>GITHUB</small><b>Explore my code</b></span><i>↗</i></a>
-        </div>
-      </div></div>
-    </section>
-  </main>
-  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">KS</span><span>KUNAL <b>SHINDE</b></span></a><p>Designed with curiosity <span>✦</span> © <span id="year">2026</span> Kunal Shinde</p><a href="#top" class="footer-top">Back to top ↑</a></div></footer>
-  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+                <h1>
+                    Hi, I'm <span>Kunal Shinde</span>
+                </h1>
+
+                <h2>
+                    I Build Web Applications & Discover Insights From Data.
+                </h2>
+
+                <p class="hero-description">
+                    I'm a B.Sc. Computer Science student passionate about
+                    Python, SQL, data analytics and web development.
+                    I enjoy building practical projects and learning new
+                    technologies to solve real-world problems.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        Explore My Projects
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <a href="resume/Kunal_Shinde_Resume.pdf"
+                       class="btn resume-btn"
+                       download>
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/kunalshinde2109"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/kunal-shinde-545592436"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="mailto:kunalshinde1600@gmail.com"
+                       aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-glow">
+                    <img src="images/profile.jpg"
+                         alt="Kunal Shinde"
+                         class="profile-img">
+                </div>
+
+                <div class="floating-badge badge-python">
+                    <i class="fab fa-python"></i> Python
+                </div>
+
+                <div class="floating-badge badge-sql">
+                    <i class="fas fa-database"></i> SQL / MySQL
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-down" aria-label="Scroll to About">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-heading">
+                <p class="section-label">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Learning Today. Building for Tomorrow.</h3>
+
+                    <p>
+                        I'm Kunal Shinde from Nashik, Maharashtra,
+                        currently pursuing a B.Sc. in Computer Science.
+                        My interests include data analysis, Python
+                        programming, database management and web development.
+                    </p>
+
+                    <p>
+                        I have developed academic and personal projects
+                        using Python, Flask, PHP and MySQL. I am continuously
+                        improving my technical skills and looking for
+                        opportunities to grow as a fresher.
+                    </p>
+
+                    <a href="resume/Kunal_Shinde_Resume.pdf"
+                       class="btn resume-btn"
+                       download>
+                        <i class="fas fa-file-arrow-down"></i>
+                        Get My Resume
+                    </a>
+                </div>
+
+                <div class="about-details">
+                    <div class="detail-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Education</h4>
+                            <p>B.Sc. Computer Science</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nashik, Maharashtra</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>Career Interest</h4>
+                            <p>Data Analytics & Web Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-heading">
+                <p class="section-label">WHAT I WORK WITH</p>
+                <h2>My <span>Skills</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Programming fundamentals</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL / MySQL</h3>
+                    <p>Database management</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-chart-column"></i>
+                    <h3>Excel</h3>
+                    <p>Data organization and analysis</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Power BI</h3>
+                    <p>Data visualization fundamentals</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML & CSS</h3>
+                    <p>Web page design</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interactive web experiences</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                    <p>Server-side web development</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Flask</h3>
+                    <p>Python web applications</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and projects</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-heading">
+                <p class="section-label">WHAT I'VE BUILT</p>
+                <h2>My <span>Projects</span></h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-building-columns"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <p class="project-type">PYTHON • FLASK • MYSQL</p>
+                        <h3>Bank Management System</h3>
+
+                        <p>
+                            A database-driven banking application built
+                            to manage customer information, accounts and
+                            transactions through a web interface.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/kunalshinde2109/Bank-management-system"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            View on GitHub
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <p class="project-type">PHP • MYSQL • XAMPP</p>
+                        <h3>Library Management System</h3>
+
+                        <p>
+                            A library application designed to organize
+                            books, student records, book issuing,
+                            returns and library operations.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>HTML / CSS</span>
+                        </div>
+
+                        <a href="https://github.com/kunalshinde2109"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            Explore GitHub
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <p class="project-type">HTML • CSS • JAVASCRIPT</p>
+                        <h3>My Portfolio Website</h3>
+
+                        <p>
+                            My personal portfolio showcasing my skills,
+                            development projects, professional profile
+                            and resume.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="https://github.com/kunalshinde2109/My-Portfolio"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            View Source Code
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section resume-section">
+            <div class="resume-content">
+                <i class="fas fa-file-pdf resume-large-icon"></i>
+
+                <p class="section-label">MY PROFESSIONAL PROFILE</p>
+                <h2>Want to Know More <span>About Me?</span></h2>
+
+                <p>
+                    Download my resume to explore my education,
+                    technical skills, projects and career interests.
+                </p>
+
+                <a href="resume/Kunal_Shinde_Resume.pdf"
+                   class="btn resume-btn"
+                   download>
+                    <i class="fas fa-download"></i>
+                    Download My Resume (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="section-label">LET'S CONNECT</p>
+                <h2>Contact <span>Me</span></h2>
+            </div>
+
+            <p class="contact-intro">
+                Interested in connecting or discussing an opportunity?
+                Feel free to reach out.
+            </p>
+
+            <div class="contact-grid">
+                <a href="mailto:kunalshinde1600@gmail.com"
+                   class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>Send me an email</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/kunal-shinde-545592436"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                </a>
+
+                <a href="https://github.com/kunalshinde2109"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Explore my repositories</p>
+                </a>
+                 
+                <a href="tel:7820906785" class="contact-card">
+                   <i class="fas fa-phone"></i>
+                   <h3>Phone</h3>
+                   <p>7820906785</p>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">KS<span>.</span></a>
+
+        <p>
+            Designed & built by Kunal Shinde
+        </p>
+
+        <p class="copyright">
+            &copy; <span id="year">2026</span> Kunal Shinde.
+            All rights reserved.
+        </p>
+
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Small navigation and animation support -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener("click", function () {
+                const isOpen = navLinks.classList.toggle("active");
+                menuToggle.setAttribute("aria-expanded", isOpen);
+                menuToggle.innerHTML = isOpen
+                    ? '<i class="fas fa-xmark"></i>'
+                    : '<i class="fas fa-bars"></i>';
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.setAttribute("aria-expanded", "false");
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+        }
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll(
+            ".section-heading, .about-content, .skill-card, .project-card, .resume-content, .contact-card"
+        ).forEach(function (element) {
+            element.classList.add("reveal");
+            observer.observe(element);
+        });
+    </script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
